@@ -25,7 +25,7 @@
         "illuminate/validation": "~5.1",
         "paragonie/random_compat": "^1|^2.0.18",
         "symfony/polyfill-php56": "~1.1",
-        "watson/validating": "~1.0.0 || ~2.0.0 || ~3.0.0"
+        "watson/validating": "~1.0.0 || ~2.0.0 || ^3.2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "2.0.0-alpha",
