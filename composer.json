@@ -14,18 +14,10 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=5.5.9",
-        "nesbot/Carbon": "~1.9",
-        "illuminate/contracts": "~5.1",
-        "illuminate/database": "~5.1 || >= 5.1.27",
-        "illuminate/encryption": "~5.1",
-        "illuminate/events": "~5.1",
-        "illuminate/hashing": "~5.1",
-        "illuminate/support": "~5.1",
-        "illuminate/validation": "~5.1",
-        "paragonie/random_compat": "^1|^2",
-        "symfony/polyfill-php56": "~1.1",
-        "watson/validating": "~1.0.0 || ~2.0.0"
+        "laravel/framework": "^7.0",
+        "nesbot/carbon": "^2.17",
+        "paragonie/random_compat": "^2",
+        "watson/validating": "~5.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "2.0.0-alpha",
