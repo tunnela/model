@@ -5,6 +5,7 @@ namespace Esensi\Model\Traits;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Str;
 
 /**
  * Trait that implements the Relating Model Interface.
@@ -224,7 +225,7 @@ trait RelatingModelTrait
         // foreign key name by using the name of the relationship function, which
         // when combined with an "_id" should conventionally match the columns.
         if (is_null($foreignKey)) {
-            $foreignKey = snake_case($relation).'_id';
+            $foreignKey = Str::snake($relation).'_id';
         }
 
         $instance = new $related();
@@ -267,7 +268,7 @@ trait RelatingModelTrait
                 $relation = $caller['function'];
             }
 
-            $name = snake_case($relation);
+            $name = Str::snake($relation);
         }
 
         list($type, $id) = $this->getMorphs($name, $type, $id);
