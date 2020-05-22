@@ -88,7 +88,7 @@ trait RelatingModelTrait
             }
 
             // Load the relationship
-            return $this->getRelationshipFromMethod($name, camel_case($name));
+            return $this->getRelationshipFromMethod($name, Str::camel($name));
         }
     }
 
